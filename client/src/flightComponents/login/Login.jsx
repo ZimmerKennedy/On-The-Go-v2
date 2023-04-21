@@ -31,7 +31,7 @@ const Login = () => {
   };
 
   return (
-    <main className="bg-gray-200">
+    <main className="bg-gray-100">
       <Navbar />
       <div className="flex justify-center items-center min-h-screen">
         <form

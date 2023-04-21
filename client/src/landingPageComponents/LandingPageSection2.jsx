@@ -11,7 +11,7 @@ const LandingPageSection2 = () => {
 
   return (
     <AnimatePresence>
-      <main ref={ref} className="w-full min-h-screen bg-white pt-28">
+      <main ref={ref} className="w-full min-h-screen bg-gray-100 pt-28">
         {inView && (
           <>
             <motion.section
@@ -20,17 +20,17 @@ const LandingPageSection2 = () => {
             className="flex flex-col items-center">
               <div
                 
-                className="tracking-widest text-lg lg:text-2xl italic text-shadow-default"
+                className="tracking-widest text-lg lg:text-2xl italic "
               >
                 Travel Support
               </div>
-              <div className=" text-xl font-roboto font-bold  sm:text-4xl lg:text-5xl mt-5 text-shadow-default text-slate-100 text-shadow-lg">
+              <div className=" text-xl font-roboto font-bold  sm:text-4xl lg:text-5xl mt-5 text-white text-shadow-lg">
                 Plan your next travel with confidence
               </div>
               <div
                 
                 {...slideAnimation("right")}
-                className="text-sm sm:text-base lg:text-xl mt-5 text-navy-blue mx-2 text-shadow-default backdrop-blur-sm text-center"
+                className="text-sm sm:text-base lg:text-xl mt-5 text-navy-blue mx-2  backdrop-blur-sm text-center"
               >
                 Find help with booking and travel plans, see what to expect
                 along the journey!
@@ -43,21 +43,21 @@ const LandingPageSection2 = () => {
                
                {...slideAnimation("left")} 
                className=" flex flex-col flex-wrap w-1/4 ">
-                <div className="font-roboto text-2xl text-slate-300 font-semibold text-shadow-lg">
+                <div className="font-roboto text-2xl text-slate-300 font-semibold">
                   01
                 </div>
                 <div className="mb-7 font-inter-tight text-light-blue font-semibold ">
                   Travel hassle-free with On The Go! Book flights, hotels, and
                   rental cars in one place for your dream trip.
                 </div>
-                <div className="font-roboto text-2xl text-slate-300 font-semibold text-shadow-lg">
+                <div className="font-roboto text-2xl text-slate-300 font-semibold">
                   02
                 </div>
                 <div className="mb-7 font-inter-tight text-light-blue font-semibold">
                   Gain travel support and foresight! Our platform streamlines
                   bookings while providing valuable journey insights.
                 </div>
-                <div className="font-roboto text-2xl text-slate-300 font-semibold text-shadow-lg">
+                <div className="font-roboto text-2xl text-slate-300 font-semibold">
                   03
                 </div>
                 <div className="mb-7 font-inter-tight text-light-blue font-semibold">

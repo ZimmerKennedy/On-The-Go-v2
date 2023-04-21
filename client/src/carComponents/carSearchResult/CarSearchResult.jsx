@@ -83,9 +83,9 @@ const CarSearchResult = () => {
   const carTypes = getCarTypes(extractedData);
 
   return (
-    <>
+    
+      <main className="w-full min-h-screen flex flex-col justify-center items-center bg-gray-100">
       <Navbar />
-      <main className="w-full min-h-screen flex flex-col justify-center items-center bg-gray-200">
         <CarSearchUserDetails />
         <main className="w-full h-full flex flex-col lg:flex-row justify-between lg:justify-center">
           <section className="flex flex-row lg:flex-col lg:w-1/6 lg:mx-6 ">
@@ -114,7 +114,7 @@ const CarSearchResult = () => {
                 </span>
               </button>
               {isCarTypeOpen && (
-                <section className="flex flex-col lg:p-3 bg-gray-100 z-10 mt-2 lg:mt-0 mb-0.5 absolute lg:relative">
+                <section className="flex flex-col lg:p-3 bg-gray-200 z-10 mt-2 lg:mt-0 mb-0.5 absolute lg:relative">
                   <CarTypeFilter onFilter={handleFilter} />
                 </section>
               )}
@@ -144,7 +144,7 @@ const CarSearchResult = () => {
                 </span>
               </button>
               {isPassengerOpen && (
-                <section className="flex flex-col p-3 mt-2 lg:mt-0 bg-gray-100 z-10 mb-0.5 absolute lg:relative">
+                <section className="flex flex-col p-3 mt-2 lg:mt-0 bg-gray-200 z-10 mb-0.5 absolute lg:relative">
                   <PassengerFilter onFilter={handleFilter} />
                 </section>
               )}
@@ -174,7 +174,7 @@ const CarSearchResult = () => {
                 </span>
               </button>
               {isPriceOpen && (
-                <section className="flex flex-col mt-2  bg-gray-100 z-10 mb-0.5 absolute lg:relative">
+                <section className="flex flex-col mt-2  bg-gray-200 z-10 mb-0.5 absolute lg:relative">
                   <PriceFilter onFilter={handleFilter} />
                 </section>
               )}
@@ -204,7 +204,7 @@ const CarSearchResult = () => {
                 </span>
               </button>
               {isTransmissionOpen && (
-                <section className="flex flex-col p-3 mt-2 lg:mt-0 ml-4 lg:ml-0 bg-gray-100 z-10 mb-0.5 absolute lg:relative">
+                <section className="flex flex-col p-3 mt-2 lg:mt-0 ml-4 lg:ml-0 bg-gray-200 z-10 mb-0.5 absolute lg:relative">
                   <TransmissionFilter onFilter={handleFilter} />
                 </section>
               )}
@@ -238,7 +238,7 @@ const CarSearchResult = () => {
                     ],
                   });
                 }}
-                className="border-4 bg-white w-full lg:w-[30%] h-1/8 cursor-pointer flex flex-col justify-center items-center m-2"
+                className="border-2 bg-white shadow-lg w-full lg:w-[30%] h-1/8 cursor-pointer flex flex-col justify-center items-center m-2"
               >
                 <div className="font-roboto text-xl font-bold m-2 border-b border-navy-blue">
                   {data.car.description}
@@ -265,7 +265,7 @@ const CarSearchResult = () => {
           </section>
         </main>
       </main>
-    </>
+    
   );
 };
 

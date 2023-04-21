@@ -13,9 +13,9 @@ const flightData = useSelector((state) => state.userFlights);
   }
 
   return (
-    <>
+  
+      <main className="w-full min-h-screen flex flex-col justify-center items-center bg-gray-100">
       <Navbar />
-      <main className="w-full min-h-screen flex flex-col justify-center items-center bg-gray-200">
         <DepartingFlightDetailsOneWay />
 
         <div className="w-full h-full flex flex-col lg:flex-row justify-between lg:justify-center">
@@ -27,7 +27,7 @@ const flightData = useSelector((state) => state.userFlights);
           </section>
         </div>
       </main>
-    </>
+   
   );
 };
 

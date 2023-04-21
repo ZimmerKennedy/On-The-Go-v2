@@ -21,8 +21,8 @@ const FlightSearch = () => {
 
   return (
     <>
+      <main className="w-full min-h-screen flex flex-col justify-center items-center bg-gray-100">
       <Navbar />
-      <main className="w-full min-h-screen flex flex-col justify-center items-center bg-gray-200">
         {!renderReturningFlight && <DepartingFlightUserInfo />}
         {renderReturningFlight && <ReturningFlightUserInfo />}
         <div className="w-full h-full flex flex-col lg:flex-row justify-between lg:justify-center">

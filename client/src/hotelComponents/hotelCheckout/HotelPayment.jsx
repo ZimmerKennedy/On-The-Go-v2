@@ -29,14 +29,14 @@ const HotelPayment = () => {
   }, []);
 
   return (
-    <>
-    <Navbar />
+    
     <main
-      className="min-h-screen w-full bg-cover bg-center bg-no-repeat bg-gray-50"
+      className="min-h-screen w-full bg-cover bg-center bg-no-repeat bg-gray-100"
       style={{ backgroundImage: `url('')` }}
       >
+    <Navbar />
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center pt-4">
         <div className="w-full xl:w-1/3 my-4">
           <PersonalInfoUser />
         </div>
@@ -68,7 +68,7 @@ const HotelPayment = () => {
         </section>
       </div>
     </main>
-          </>
+          
   );
 };
 

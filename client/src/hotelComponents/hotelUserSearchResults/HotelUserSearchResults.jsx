@@ -79,9 +79,9 @@ const HotelUserSearchResults = () => {
   };
 
   return (
-    <div className="z-50">
+    <div className="z-50 bg-gray-100">
       <Navbar />
-      <main className="w-full min-h-screen flex flex-col items-center bg-gray-300">
+      <main className="w-full min-h-screen flex flex-col items-center bg-gray-100">
         <HotelUserInput />
         <main className="w-full h-full flex flex-col lg:flex-row justify-center items-center lg:items-start">
           <section className="flex flex-row lg:flex-col lg:w-1/6 lg:mx-6">

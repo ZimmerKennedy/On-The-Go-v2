@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.static(staticPath));
 
 app.use(cors({ 
-  origin: ["http://localhost:5173", "https://on-the-go-v2.onrender.com", "https://on-the-go-v2.vercel.app"], 
+  origin: ["http://localhost:5173", "https://on-the-go.onrender.com", "https://on-the-go-beta.vercel.app"], 
   credentials: true 
 }));
 app.get("/", (req, res) => {

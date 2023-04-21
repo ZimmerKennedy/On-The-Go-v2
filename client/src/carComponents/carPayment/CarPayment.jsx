@@ -29,12 +29,12 @@ const CarPayment = () => {
   }, []);
 
   return (
-    <>
-    <Navbar />
+    
     <main
-      className="min-h-screen w-full bg-cover bg-center bg-no-repeat bg-gray-50"
+      className="min-h-screen w-full bg-cover bg-center bg-no-repeat bg-gray-100"
       style={{ backgroundImage: `url('/assets/tryCar1.jpg')` }}
       >
+    <Navbar />
 
       <div className="flex flex-col items-center">
         <div className="w-full xl:w-1/3 my-4">
@@ -68,7 +68,7 @@ const CarPayment = () => {
         </section>
       </div>
     </main>
-          </>
+          
   );
 };
 

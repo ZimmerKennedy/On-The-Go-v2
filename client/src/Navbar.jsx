@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <main className="w-full flex items center justify-center pt-4">
-    <nav className="z-50 backdrop-blur-sm bg-gray-200 bg-opacity-50 sticky group transition flex flex-row justify-between w-1/2 h-16 rounded-full">
+    <nav className="z-50 backdrop-blur-sm bg-gray-300 bg-opacity-50 sticky group transition flex flex-row justify-between w-1/2 h-16 rounded-full">
       
       <div
         className="h-26 w-24 text-navy-blue bg-contain bg-center bg-no-repeat xl:ml-8 cursor-pointer"
