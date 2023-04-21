@@ -59,7 +59,7 @@ const Payment = () => {
             <div>
               <button className=" bg-deep-blue hover:bg-navy-blue w-56 text-white font-bold py-2 px-4 rounded shadow-md transition duration-200 ease-in-out"
               onClick={() =>{navigate('/')}}>
-                Submit
+                Book
               </button>
               <p className="text-red-500 text-sm mt-2">
                 Grabbing Payment Option Please Wait.

@@ -58,7 +58,7 @@ const CarPayment = () => {
                   navigate("/flight-home");
                 }}
                 >
-                Submit
+                Book
               </button>
               <p className="text-red-500 text-sm mt-2">
                 Grabbing Payment Option Please Wait.
