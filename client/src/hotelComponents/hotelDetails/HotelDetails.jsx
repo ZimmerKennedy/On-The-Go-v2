@@ -28,9 +28,9 @@ const HotelDetails = () => {
 
   
   return (
-    <div className="min-w-full min-h-screen ">
+    <div className="min-w-full min-h-screen overflow-x-hidden">
       <Navbar />
-      <main className="w-full h-full flex flex-col items-center justify-center">
+      <main className="w-full h-full flex flex-col items-center justify-center overflow-x-hidden">
         <HotelUserInput />
 
         <HotelDetailsSection1
@@ -51,7 +51,7 @@ const HotelDetails = () => {
           </div>
       </main>
 
-      <div className="absolute w-1/2 h-1/2 top-0 left-96">
+      <div className="absolute w-1/2 h-1/2 top-0 ">
         {showImages && (
           <HotelImages
             hotelPhotosArray={hotelPhotosArray}

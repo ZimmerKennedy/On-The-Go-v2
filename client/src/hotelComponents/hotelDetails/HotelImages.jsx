@@ -19,7 +19,7 @@ const HotelImages = ({ onClose }) => {
 
   return (
     <div
-      className="cursor-pointer fixed inset-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-10"
+      className="cursor-pointer fixed inset-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-10 overflow-x-hidden"
       onClick={onClose}
     >
       <div
@@ -32,7 +32,7 @@ const HotelImages = ({ onClose }) => {
           onClick={onClose}
         />
         <h2 className="text-xl mb-4 text-center font-bold">{hotelData.data.hotelName}</h2>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-4">
           {hotelPhotosArray.map((photoUrl, index) => (
             <div
               key={index}

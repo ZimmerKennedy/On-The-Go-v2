@@ -69,7 +69,7 @@ const LandingPageSection3 = () => {
     <div className="max-w-[950px] h-screen lg:h-[780px] w-full py-10 px-2 relative group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-full h-full rounded-2xl bg-cover duration-500"
+        className="w-full h-full rounded-2xl bg-cover duration-500 bg-center"
       >
         <div className=" w-full h-full flex items-center justify-center text-white text-4xl font-bold text-shadow-lg">
           {slides[currentIndex].name}

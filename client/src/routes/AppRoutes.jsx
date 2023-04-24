@@ -58,9 +58,6 @@ const AppRoutes = () => {
           <Route path="/user-car-preview" element={<CarUserInfo />} />
           <Route path="/car-payment" element={<CarPayment />} />
 
-          {/* This is For Testing Routes */}
-          <Route path="/test-car" element={<CarBooking />} />
-
           {/* Routes for Hotel App */}
           <Route path="/hotel-home" element={<HotelHome />} />
           <Route path="/hotel-search" element={<HotelUserSearchResults />} />

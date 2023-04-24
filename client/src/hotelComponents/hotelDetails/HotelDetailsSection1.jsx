@@ -10,11 +10,11 @@ const HotelDetailsSection1 = ({
       className=" w-full  lg:h-72 grid grid-cols-5 gap-1 z-10 cursor-pointer my-2"
       onClick={handleCardClick}
     >
-      <div className="w-full h-44 lg:h-full col-span-5 grid grid-cols-5 gap-0.5 lg:gap-1 cursor-pointer">
-        {hotelPhotosArray.slice(0, 5).map((photoUrl, index) => (
+      <div className="w-full h-44 lg:h-full col-span-5 grid grid-cols-4 gap-0.5 lg:gap-1 cursor-pointer">
+        {hotelPhotosArray.slice(0, 4).map((photoUrl, index) => (
           <div
             key={index}
-            className="w-[100%] h-[100%] bg-no-repeat bg-cover"
+            className="w-[100%] h-[100%] bg-no-repeat bg-cover bg-center"
             style={{
               backgroundImage: `url(${photoUrl})`,
             }}
