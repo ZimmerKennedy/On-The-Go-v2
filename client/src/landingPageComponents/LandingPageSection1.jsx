@@ -51,10 +51,10 @@ const LandingPageSection1 = () => {
         {...fadeAnimation}
         className="flex flex-col items-center justify-center pt-20 lg:py-40"
         >
-        <div className="text-4xl lg:text-9xl font-roboto font-extrabold text-white text-shadow-lg tracking-wider border-white border-b">
+        <div className="text-4xl lg:text-9xl font-bruno-ace-sc font-extrabold text-white text-shadow-lg tracking-wider border-white border-b">
           Travel with Ease.
         </div>
-        <div className="text-2xl lg:text-5xl font-light text-gray-300 text-shadow-lg tracking-wider">
+        <div className="text-2xl lg:text-5xl font-bruno-ace-sc font-light text-gray-300 text-shadow-lg tracking-wider">
           Discover Your Options
         </div>
       </motion.div>

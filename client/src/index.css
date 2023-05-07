@@ -1,66 +1,14 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@keyframes slide {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 100% 0;
-    }
-  }
 
 
 
 
+/* Tailwind Styles */
 
 
-  .bottom-border::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: currentColor;
-    transition: width 0.3s;
-   
-  }
-  
-  .group:hover > .bottom-border::after {
-    width: 100%;
-  }
 
-
-  /* Loading */
-
-  @keyframes animation-loading {
-    0% {
-      transform: scale(1);
-    }
-    20% {
-      transform: scale(1, 2.5);
-    }
-    40% {
-      transform: scale(1);
-    }
-  }
-  
-  .animation-loading {
-    animation: animation-loading 1s ease-in-out infinite;
-  }
-
-
-  .loading-page {
-    animation: fadeIn 1s ease-in;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }

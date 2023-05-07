@@ -32,6 +32,7 @@ module.exports = {
         'inter-tight': ['Inter Tight', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
         'tilt-warp': ['Tilt Warp', 'cursive'],
+        'bruno-ace-sc': ['Bruno Ace SC', 'sans-serif'],
       },
       letterSpacing: {
         'widest': '.65em',
