@@ -1,14 +1,70 @@
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.nav__links {
+  @apply mx-4 cursor-pointer text-text-color font-roboto;
+}
 
+.nav__section {
+  @apply hidden xl:flex flex-row p-6 text-xl font-semibold font-roboto text-navy-blue;
+}
 
+.title__large {
+  @apply font-bruno-ace-sc text-9xl font-medium text-text-color;
+}
 
+.no__list {
+  @apply list-none m-0 p-0;
+}
+.title {
+  line-height: 8.85vw;
+  font-size: 7.9vw;
+}
+.title__circle {
+  @apply cursor-pointer block m-auto w-full h-full rounded-full backdrop-blur-sm border-2 font-bruno-ace-sc text-text-color text-3xl;
+}
+.title__circle:hover {
+  @apply scale-110 bg-white text-black translate-y-6;
+}
 
-/* Tailwind Styles */
+.title__circle__desc {
+  @apply absolute grid place-content-center top-0 left-0 w-full h-full;
+}
 
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+.animate__bounce {
+  animation: bounce 15s infinite;
+}
 
+@keyframes diagonal-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
+.diagonal__rotate {
+  animation: diagonal-rotate 4s linear infinite;
+}

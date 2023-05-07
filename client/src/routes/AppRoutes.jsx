@@ -13,7 +13,7 @@ import {
   Login,
 } from "../flightComponents";
 import { CarBooking, CarHome, CarSearchResult, CarUserInfo, CarPayment } from "../carComponents";
-import LandingPage from "../LandingPage"
+import LandingPage from "../landingPageComponents/LandingPage"
 import {HotelHome, HotelUserSearchResults, HotelDetails, HotelImages} from "../hotelComponents"
 import HotelPayment from "../hotelComponents/hotelCheckout/HotelPayment";
 import LoadingPage from "../LoadingPage";
@@ -32,7 +32,7 @@ const AppRoutes = () => {
   }, []);
 
   return (
-    <div>
+    <>
       {!showContent && <LoadingPage />}
       {showContent && (
       <Suspense fallback={<LoadingPage />}>
@@ -67,7 +67,7 @@ const AppRoutes = () => {
         </Routes>
       </Suspense>
       )}
-    </div>
+    </>
   );
 };
 
