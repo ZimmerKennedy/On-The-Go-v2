@@ -12,6 +12,7 @@ const LandingPage = () => {
     <main className="overflow-hidden bg-primary-color">
       <Navbar />
       <LandingPageSection1 />
+      <LandingPageSection2 />
     </main>
   );
 };
