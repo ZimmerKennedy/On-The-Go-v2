@@ -22,7 +22,7 @@
   font-size: 7.9vw;
 }
 .title__circle {
-  @apply cursor-pointer block m-auto w-full h-full rounded-full backdrop-blur-sm border-2 font-bruno-ace-sc text-text-color text-3xl;
+  @apply cursor-pointer block m-auto w-full h-full rounded-full backdrop-blur-sm border-2 font-bruno-ace-sc text-text-color text-3xl transition-all;
 }
 .title__circle:hover {
   @apply scale-110 bg-white text-black translate-y-6;
