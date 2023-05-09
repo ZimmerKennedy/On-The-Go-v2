@@ -6,6 +6,8 @@ import { Parallax } from "react-parallax";
 
 import { AnimatePresence } from "framer-motion";
 import Navbar from "../Navbar";
+import LandingPageSection3 from "./LandingPageSection3";
+import LandingPageSection4 from "./LandingPageSection4";
 
 const LandingPage = () => {
   return (
@@ -13,6 +15,8 @@ const LandingPage = () => {
       <Navbar />
       <LandingPageSection1 />
       <LandingPageSection2 />
+      <LandingPageSection3 />
+      <LandingPageSection4 />
     </main>
   );
 };

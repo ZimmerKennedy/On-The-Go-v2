@@ -10,7 +10,7 @@ const LandingPageSection2 = () => {
         </div>
         <div className="justify-self-end border-2 rounded-r-full rounded-l-full py-4 px-6 text-2xl text-text-color font-roboto">01</div>
       </div>
-      <hr />
+      <hr/>
       <div className="mt-16 font-roboto text-text-color text-5xl font-500 w-[39vw]">
       A multicultural Travel Management company with an international presence of 33+ years and specialization in the marine & corporate travel industry.
       </div>
