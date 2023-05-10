@@ -66,13 +66,13 @@ const Navbar = () => {
         className="xl:hidden flex items-center px-6 cursor-pointer"
         onClick={handleMenuToggle}
       >
-        <FontAwesomeIcon icon={faBars} size="lg" />
+        <FontAwesomeIcon icon={faBars} size="2xl" color="#E3E0DB" />
       </div>
 
 
 
       {menuOpen && (
-        <div className="w-full h-screen absolute flex flex-col justify-evenly right-0 top-20 backdrop-blur-sm bg-opacity-90 bg-gray-200 text-text-color text-4xl font-semibold font-tilt-warp z-50">
+        <div className="w-full h-screen absolute flex flex-col justify-evenly right-0 top-20 backdrop-blur-sm bg-opacity-90 bg-text-color text-primary-color text-4xl font-semibold font-tilt-warp z-50">
           <div
             className="cursor-pointer text-center"
             onClick={() => navigate("/car-home")}

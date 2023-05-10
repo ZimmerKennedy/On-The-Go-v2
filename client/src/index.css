@@ -14,6 +14,10 @@
   @apply font-bruno-ace-sc text-9xl font-medium text-text-color;
 }
 
+.title__large__mobile {
+  @apply font-bruno-ace-sc text-xl font-medium text-text-color;
+}
+
 .no__list {
   @apply list-none m-0 p-0;
 }
@@ -21,9 +25,7 @@
   line-height: 8.85vw;
   font-size: 7.9vw;
 }
-.title__circle {
-  @apply cursor-pointer block m-auto w-full h-full rounded-full backdrop-blur-sm border-2 font-bruno-ace-sc text-text-color text-3xl transition-all;
-}
+
 .title__circle:hover {
   @apply scale-110 bg-white text-black translate-y-6;
 }
@@ -31,13 +33,9 @@
 .title__circle__desc {
   @apply absolute grid place-content-center top-0 left-0 w-full h-full;
 }
-.services__title {
-  @apply text-8xl text-text-color py-10 font-bruno-ace-sc tracking-tight;
-}
 
-.why__title {
-  @apply h-40 w-full text-text-color text-3xl font-roboto;
-}
+
+
 
 .why__description {
   @apply h-20 w-full border-text-color font-bruno-ace-sc text-2xl tracking-wide text-text-color py-4 px-8 relative;
