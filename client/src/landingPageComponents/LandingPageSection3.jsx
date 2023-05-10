@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { DiagonalArrow } from "../config/svgs";
-import { motion } from "framer-motion";
 import TransitioningBorder from "./TransitioningBorder";
-import { fadeAnimation } from "../config/motion";
+import { useInView } from "react-intersection-observer";
+import { AnimatePresence, motion } from "framer-motion";
+import { borderAnimation, fadeAnimation, headContainerAnimation, headTextAnimation, slideAnimation } from "../config/motion";
 const imageUrls = [
   {
     url: "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg",
@@ -22,6 +23,9 @@ const LandingPageSection3 = () => {
   const [currentImageUrl, setCurrentImageUrl] = useState(
     "https://images.unsplash.com/photo-1592985684811-6c0f98adb014?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80"
   );
+  const [ref, inView] = useInView({
+    threshold: 0.2,
+  });
   const [activeBorder, setActiveBorder] = useState(null);
 
   const handleMouseEnter = (name) => {
@@ -31,69 +35,67 @@ const LandingPageSection3 = () => {
       setActiveBorder(name);
     }
   };
-
-  const imageVariants = {
-    visible: {
-      opacity: 1,
-      transition: { duration: 0.7, ease: "easeInOut" },
-    },
-    hidden: { opacity: 0 },
-  };
   const handleBorderAnimateLeave = () => {
     setActiveBorder(null);
   };
 
   return (
-    <main className=" w-full px-20 mx-auto h-screen min-h-screen pt-10 relative">
-      <section className="flex flex-row h-full gap-x-10">
+    <main ref={ref} className=" w-full px-20 mx-auto h-screen min-h-screen pt-10 relative">
+      {inView && (
+
+        <section className="flex flex-row h-full gap-x-10">
         <section className="basis-3/4 flex flex-col justify-center relative">
-       <section className="text-right text-text-color font-medium text-2xl">OUR SERVICES</section>
+       <motion.section {...fadeAnimation} className="text-right text-text-color font-medium text-2xl">OUR SERVICES</motion.section>
           <TransitioningBorder />
-          <div
+          <motion.div
+            {...fadeAnimation}
             className=" services__title relative hover:opacity-10 hover:border-t-transparent cursor-pointer transition-all"
             onMouseEnter={() => handleMouseEnter("Flight")}
             onMouseLeave={handleBorderAnimateLeave}
-          >
+            >
             Flight Bookings
             <span className="inline-block absolute right-0 bottom-5">
               <DiagonalArrow width={50} fill={"#E3E0DB"} />
             </span>
-          </div>
+          </motion.div>
           <TransitioningBorder isHovered={activeBorder === "Flight"} />
-          <div
+          <motion.div
+            {...fadeAnimation}
             className="  services__title relative  hover:opacity-10 cursor-pointer transition-all"
             onMouseEnter={() => handleMouseEnter("Car")}
             onMouseLeave={handleBorderAnimateLeave}
-          >
+            >
             Car Rentals
             <span className="inline-block absolute right-0 bottom-5">
               <DiagonalArrow width={50} fill={"#E3E0DB"} />
             </span>
-          </div>
+          </motion.div>
           <TransitioningBorder isHovered={activeBorder === "Car"} />
-          <div
+          <motion.div
+             {...fadeAnimation}
             className=" services__title relative hover:opacity-10 cursor-pointer transition-all"
             onMouseEnter={() => handleMouseEnter("Hotel")}
             onMouseLeave={handleBorderAnimateLeave}
-          >
+            >
             Hotel Bookings
             <span className="inline-block absolute right-0 bottom-5">
               <DiagonalArrow width={50} fill={"#E3E0DB"} />
             </span>
-          </div>
+          </motion.div>
           <TransitioningBorder isHovered={activeBorder === "Hotel"} />
         </section>
         <motion.section
           key={currentImageUrl}
-          className="basis-1/4 relative mb-28 flex justify-center items-center"
+          className="basis-1/4 relative mb-44 flex justify-center items-center"
           style={{
             backgroundImage: `url(${currentImageUrl})`,
             backgroundSize: "cover",
             backgroundPosition: "center, center",
           }}
-          {...fadeAnimation}
-        ></motion.section>
+          {...slideAnimation("right")}
+          ></motion.section>
       </section>
+    )}
     </main>
   );
 };

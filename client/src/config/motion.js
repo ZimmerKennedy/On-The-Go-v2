@@ -70,7 +70,7 @@ export const headContainerAnimation = {
 };
 
 export const borderAnimation = {
-  initial: { width: 0, transition: { ...transition, delay: 0.5} },
-  animate: { width: "100%", transition: { ...transition, delay: 0.5 } },
+  initial: { width: 0, transition: { ...transition, delay: 0.2} },
+  animate: { width: "100%", transition: { ...transition, delay: 0.2 } },
   exit: { width: 0, opacity: 0, transition: { ...transition, delay: 0 } },
 };
