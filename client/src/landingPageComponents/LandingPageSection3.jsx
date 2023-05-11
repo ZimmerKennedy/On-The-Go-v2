@@ -91,7 +91,7 @@ const LandingPageSection3 = () => {
         </section>
         <motion.section
           key={currentImageUrl}
-          className="hidden  basis-1/4 relative lg:mb-44 sm:flex justify-center items-center"
+          className="hidden  basis-1/4 relative sm:flex justify-center items-center"
           style={{
             backgroundImage: `url(${currentImageUrl})`,
             backgroundSize: "cover",
