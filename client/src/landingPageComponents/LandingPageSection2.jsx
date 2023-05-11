@@ -1,99 +1,35 @@
 import React from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { slideAnimation, headContainerAnimation, fadeAnimation } from "../config/motion";
 import { useInView } from "react-intersection-observer";
-import LandingPageSection3 from "./LandingPageSection3";
-
+import { AnimatePresence, motion } from "framer-motion";
+import { borderAnimation, fadeAnimation, headContainerAnimation, headTextAnimation, slideAnimation } from "../config/motion";
 const LandingPageSection2 = () => {
   const [ref, inView] = useInView({
-    threshold: 0.2, 
+    threshold: 0.2,
   });
-
   return (
-    <AnimatePresence>
-      <main ref={ref} className="w-full min-h-screen bg-gray-100 pt-28">
-        {inView && (
-          <>
-            <motion.section
-            
-            {...fadeAnimation}
-            className="flex flex-col items-center">
-              <div
-                
-                className="tracking-widest text-lg lg:text-2xl italic "
-              >
-                Travel Support
-              </div>
-              <div className=" text-xl font-roboto font-bold  sm:text-4xl lg:text-5xl mt-5 text-white text-shadow-lg">
-                Plan your next travel with confidence
-              </div>
-              <div
-                
-                {...slideAnimation("right")}
-                className="text-sm sm:text-base lg:text-xl mt-5 text-navy-blue mx-2  backdrop-blur-sm text-center"
-              >
-                Find help with booking and travel plans, see what to expect
-                along the journey!
-              </div>
-            </motion.section>
-            <section
-              className="  flex flex-row lg:items-center justify-center w-full gap-14 lg:gap-0 "
-            >
-              <motion.div
-               
-               {...slideAnimation("left")} 
-               className=" flex flex-col flex-wrap w-1/4 ">
-                <div className="font-roboto text-2xl text-slate-300 font-semibold">
-                  01
-                </div>
-                <div className="mb-7 font-inter-tight text-light-blue font-semibold ">
-                  Travel hassle-free with On The Go! Book flights, hotels, and
-                  rental cars in one place for your dream trip.
-                </div>
-                <div className="font-roboto text-2xl text-slate-300 font-semibold">
-                  02
-                </div>
-                <div className="mb-7 font-inter-tight text-light-blue font-semibold">
-                  Gain travel support and foresight! Our platform streamlines
-                  bookings while providing valuable journey insights.
-                </div>
-                <div className="font-roboto text-2xl text-slate-300 font-semibold">
-                  03
-                </div>
-                <div className="mb-7 font-inter-tight text-light-blue font-semibold">
-                  Empower your travels! Receive booking assistance and
-                  anticipate experiences for a memorable adventure.
-                </div>
-              </motion.div>
-
-              <motion.div
-               
-               {...slideAnimation("right")}
-              className="flex lg:flex-row relative flex-col justify-around">
-                <img
-                  src="/assets/window2.jpg"
-                  className="w-36 h-42  rounded-t-full  overflow-hidden lg:-right-7 relative z-10 lg:mb-0 mt-10 "
-                />
-                <img
-                  src="/assets/hotel-window.jpg"
-                  className="w-36 h-42 rounded-t-full  overflow-hidden lg:-top-16 relative z-20 lg:mb-0 mt-10"
-                />
-                <img
-                  src="/assets/car-window.jpg"
-                  className="w-36 h-42 rounded-t-full  overflow-hidden lg:-left-7 relative z-30 lg:mb-0 mt-10 "
-                />
-              </motion.div>
-            </section>
-            
-        <motion.section 
-          {...fadeAnimation}
-        className="flex w-full h-full justify-center items-center">
-        <LandingPageSection3 />
-        </motion.section>
-          </>
-        )}
-      </main>
-    </AnimatePresence>
+    <section ref={ref} className=" w-full lg:px-20 mx-auto h-full  lg:min-h-screen pt-32 lg:pt-44">
+      {inView && (
+        <>
+          <motion.div {...fadeAnimation}className="text-text-color font-medium py-2 px-2 text-xl">
+            HOW WE ACTIVATE
+          </motion.div>
+          <motion.div {...headContainerAnimation} className="flex flex-row justify-between items-start px-4 lg:px-0">
+            <div className="font-bruno-ace-sc text-3xl lg:text-8xl w-[90vw] tracking-tighter font-medium text-text-color pb-4 lg:pb-16">
+              STREAMLINED TICKET <span>MANAGEMENT SOLUTIONS</span>
+            </div>
+            <div className="justify-self-end border-2 rounded-r-full rounded-l-full px-4  lg:px-6 text-2xl text-text-color font-roboto">
+              01
+            </div>
+          </motion.div>
+          <motion.hr {...borderAnimation} className="mx-4 lg:mx-0 border-t-2 border-text-color"/>
+          <motion.div {...slideAnimation("left")} className="mt-16 font-roboto text-text-color text-md lg:text-5xl font-500 w-[70vw] pl-4 lg:pl-0 lg:w-[39vw]">
+            A multicultural Travel Management company with an international
+            presence of 33+ years and specialization in the marine & corporate
+            travel industry.
+          </motion.div>
+        </>
+      )}
+    </section>
   );
 };
 

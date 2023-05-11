@@ -24,6 +24,8 @@ module.exports = {
         'deep-blue': '#385170',
         'navy-blue': '#142d4c',
         'light-blue': '#0066cc',
+        'text-color': '#E3E0DB',
+        'primary-color': '#1c1f24'
       },
       boxShadow: {
         'navy-blue': '5px 5px 5px 1px #142d4c',
@@ -32,6 +34,7 @@ module.exports = {
         'inter-tight': ['Inter Tight', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
         'tilt-warp': ['Tilt Warp', 'cursive'],
+        'bruno-ace-sc': ['Bruno Ace SC', 'sans-serif'],
       },
       letterSpacing: {
         'widest': '.65em',
@@ -41,7 +44,7 @@ module.exports = {
         '35rem': '35rem',
         '50rem': '50rem',
         '40rem': '40rem',
-      },   
+      },  
     },
   },
   plugins: [

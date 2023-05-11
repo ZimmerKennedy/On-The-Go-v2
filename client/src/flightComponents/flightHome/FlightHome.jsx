@@ -7,14 +7,13 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
   return (
     <main>
-      
+      <Navbar isLoading={isLoading} className="z-40" />
       <div
         className=" overflow-auto lg:overflow-hidden absolute top-0 z-[-1] w-full h-[100%] lg:h-[69.5%] bg-center bg-cover"
         style={{
           backgroundImage: `url('/assets/tryPlane4.jpg')`,
         }}
       ></div>
-      <Navbar isLoading={isLoading} className="z-40" />
       <motion.section {...slideAnimation("down")} className="flex flex-col items-center justify-center px-4 xl:mt-96">
         <div {...slideAnimation("down")} className="font-roboto font-bold text-white text-shadow-lg text-4xl mt-6 lg:text-5xl">
         Fly Beyond Limits

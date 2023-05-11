@@ -22,7 +22,6 @@ export const slideAnimation = (direction) => {
   };
 };
 
-
 export const fadeAnimation = {
   initial: {
     opacity: 0,
@@ -70,3 +69,8 @@ export const headContainerAnimation = {
   exit: { x: -100, opacity: 0, transition: { ...transition, delay: 0 } },
 };
 
+export const borderAnimation = {
+  initial: { width: 0, transition: { ...transition, delay: 0.2} },
+  animate: { width: "100%", transition: { ...transition, delay: 0.2 } },
+  exit: { width: 0, opacity: 0, transition: { ...transition, delay: 0 } },
+};
