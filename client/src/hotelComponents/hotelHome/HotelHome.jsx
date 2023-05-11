@@ -10,9 +10,9 @@ const HotelHome = () => {
     <AnimatePresence>
       <main className="overflow-visible">
         <div
-          className="absolute top-0 w-full h-[69.5%]  bg-cover bg-center z-[-5]"
+          className="absolute top-0 w-full h-screen  bg-cover bg-center z-[-5]"
           style={{
-            backgroundImage: `url('/assets/tryHotel2.jpg')`,
+            backgroundImage: `url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')`,
           }}
         ></div>
 
@@ -23,14 +23,14 @@ const HotelHome = () => {
           </div>
           <HotelBooking />
         </motion.div>
-        <div
+        {/* <div
           className=" absolute bottom-0 w-full bg-cover bg-center h-1/2 lg:h-[70%] z-[-10] bg-no-repeat"
           style={{
             backgroundImage: `url('/assets/hotelKeys2.jpg')`,
 
             opacity: 1.1,
           }}
-        ></div>
+        ></div> */}
       </main>
     </AnimatePresence>
   );
