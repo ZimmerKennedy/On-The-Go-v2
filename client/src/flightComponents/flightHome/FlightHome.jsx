@@ -9,9 +9,9 @@ const Home = () => {
     <main>
       <Navbar isLoading={isLoading} className="z-40" />
       <div
-        className=" overflow-auto lg:overflow-hidden absolute top-0 z-[-1] w-full h-[100%] lg:h-[69.5%] bg-center bg-cover"
+        className=" overflow-auto lg:overflow-hidden absolute top-0 z-[-1] w-full h-screen bg-center bg-cover"
         style={{
-          backgroundImage: `url('/assets/tryPlane4.jpg')`,
+          backgroundImage: `url('https://images.pexels.com/photos/175656/pexels-photo-175656.jpeg')`,
         }}
       ></div>
       <motion.section {...slideAnimation("down")} className="flex flex-col items-center justify-center px-4 xl:mt-96">
@@ -21,14 +21,6 @@ const Home = () => {
 
         <BookingBar setIsLoading={setIsLoading} />
       </motion.section>
-      <div
-        className="absolute bottom-[-50%] lg:bottom-0 w-full bg-cover h-[50%] lg:h-[30.5%] z-[-1] bg-no-repeat"
-        style={{
-          backgroundImage: `url('/assets/backgroundImg.jpg')`,
-          
-          backgroundPosition: '0'
-        }}
-      ></div>
     </main>
   );
 };
