@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="z-50 font-roboto backdrop-blur-sm  bg-opacity-50 group transition flex flex-row justify-between w-full absolute">
+    <nav className="z-50 font-roboto backdrop-blur-sm bg-opacity-90 group transition flex flex-row justify-between w-full absolute top-0">
       <section
         className="h-24 w-24 bg-contain bg-center bg-no-repeat  cursor-pointer"
         style={{
